@@ -1,0 +1,126 @@
+
+Mer set up app and main structure (dragging dropping and setting up the storyboards)
+
+
+‘''new project
+single view app… then name it and make sure lang is swift
+
+delete the viewController.swift not useful
+go into view controller scene and under that delete the View Contoller
+
+click on < navigation controller in the tool palette click it and then drag in into our storyboard
+
+nav controller is to root controller for whole app 
+***container view controller***
+***it made a relationship for us (before we delete)
+
+
+
+now we delete the table view controller
+
+
+and then drag in the Collection View Controller
+
+
+now make a new relationship (hold down control)
+
+
+hit control drag to establish new relationship — Root view controller relationship
+
+you can add a title
+now set properties  for the collection View under ruler/sizes make cell size 80 and min spacing 0
+
+now lets set an Image View (palm tree) and drag it into the property
+change view to aspect fill (under space rocket, mode …)???
+ and change the tag for that view (every view has a tag) and make it a 1
+???Why do we do this???
+
+
+there’s nothing in AppDelegate… in swift app you can ignore that
+
+
+drag in another controller… A standard View Controller
+drag from the Collection View Cell to the new View controller — establish a Segue relationship with push(deprecated)
+
+
+Need to add in a Larger image, so…
+drag in another Image View into the new controller
+set it to aspect FIT
+set tag to 1
+
+
+ADD an action button to the title of our new Large Image View
+add in Bar Button Item
+change it’s identifier to Action
+
+
+
+
+
+
+
+NOW let’s add a controller for our large view in a different way… 
+got down to plus button bottom left new file
+
+pick iOS surce file… coacoa touch
+class FlikrCVC (collection view controller)
+subclass of UI colletioViewController
+
+
+SAME ALMOST now but 
+
+FlikrFullVC and UIViewController
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+IN Large Image View go to  the identity inspector in the third one over (in collection view) change  the class to FlikrFullVC ***The name changes now too because of this***
+
+
+
+
+
+
+now all we have to do is configure it!
+delete memory warnings in CVC
+delete number of items
+delete register cell class
+
+not gonna create a model, putting it all in the view controller
+
+**************hover over something hold the option button and click on the question mark
+
+
+the yellow guys on the side are our controllers 
+????????datasource and delegate need to be dragged from collection view to flickerCVC
+HOLD DOWN CONTROL to do this
+
+
+???????in the collection view storybaord it needs select the cell, go to attribute identifier and tell it what the identifier needs to be?????????
+
+
+WHAT WE ADDED
+
+added pics array and went and grabbed our image in 
+
+
